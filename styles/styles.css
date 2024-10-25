@@ -37,11 +37,13 @@ body  {
 
 a {
     color: var(--color-font)
+
 }
+
 
 /* NAV Bar */
 nav {
-    width: 100vw;
+    width: 100%;
     height: 5em;
     background: var(--color-nav);
     position: fixed;
@@ -73,4 +75,83 @@ nav button {
 
 .nav__menu a:hover {
     color: var(--color-bg);
+}
+
+/* ==== Header Section === */
+
+header {
+    position: relative;
+    top: 5em;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5em;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap:5em;
+    height:100%;
+}
+
+.header__left p{
+    margin: 2.5em 0 2.5em;
+}
+
+.btn {
+    padding: 0.5em;
+    background-color: yellowgreen;
+}
+
+/* ==== Caategories Section === */
+.categories {
+    background-color: var(--color-nav);
+    height:20em;
+}
+
+.categories h1 {
+    line-height: 1em;
+    margin-bottom: 2em;
+}
+
+.categories__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /*gap:3em;*/
+}
+
+.categories__left p{
+    margin: 1em 0 2.4em;
+}
+
+.categories__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.category {
+    background-color: yellowgreen;
+    padding: 1.3em;
+    border-radius: 1em;
+    transition: var(--transition);
+}
+
+.category:hover {
+    box-shadow: 0 2em 2em rgba(0, 0 , 0 , 0.3);
+}
+
+.category_icon {
+    background: #2D8F4E;
+    padding: 0.7em;
+    border-radius: 0.9em;
+}
+
+.category h5 {
+    margin: 2em 0 1em;
+}
+
+.category p {
+    font-size: 0.85em;
 }
