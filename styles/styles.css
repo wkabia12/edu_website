@@ -52,7 +52,7 @@ nav {
 }
 
 nav button {
-    display: none;
+    display:
 }
 
 .nav__container {
@@ -64,7 +64,8 @@ nav button {
 
 .nav__menu {
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: left;
     gap: 1em;
 }
 
@@ -154,4 +155,8 @@ header {
 
 .category p {
     font-size: 0.85em;
+}
+
+.category:nth-child(even) .category_icon {
+    background-color: cadetblue;
 }
